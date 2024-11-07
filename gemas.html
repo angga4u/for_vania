@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Spesial untuk Kamu! 💖</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffebf2;
+            font-family: 'Comic Sans MS', cursive;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .heart {
+            color: #ff5e7e;
+            font-size: 50px;
+            animation: heartbeat 1.5s infinite;
+        }
+        .btn-pink {
+            background-color: #ff5e7e;
+            color: white;
+            font-weight: bold;
+        }
+        .btn-pink:hover {
+            background-color: #ff3c6b;
+        }
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card p-4 text-center" style="max-width: 500px;">
+            <div class="card-body">
+                <div class="heart">💖</div>
+                <h3 class="card-title my-3">Hai, Sayangku Vania! </h3>
+                <p class="card-text">Aku cuman mau bilang terima kasih untuk hari yang udah bikin damar bahagia karena perilakunya vania, Kamu cantik banget! Kamu lucu banget! Dan kamu Ngangenin banget! Udah tau kan hal itu?? Wkwk
+                    Ini aku hadiahin untuk kamuu Semoga Suka Yaa!! Terima kasih sudah jadi bagian dari hidupku! 🌸</p>
+                <p class="card-text">I love you so much, sayang! 💕</p>
+                <button class="btn btn-pink my-3" onclick="showLoveMessage()">Klik ini kalau kamu sayang aku! 💖</button>
+                <p id="loveMessage" class="fw-bold mt-3" style="display: none;">Aku juga sayang kamu banget, seng!!  💖</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showLoveMessage() {
+            document.getElementById('loveMessage').style.display = 'block';
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
